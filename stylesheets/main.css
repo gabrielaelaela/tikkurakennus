@@ -152,8 +152,7 @@ h3 {
 
 .album img {
     opacity: 0.7;
-    max-width: 27vw;
-    max-height: 20vh;
+    width: 27vw;
 
     border: solid black 3px;
 }
@@ -195,7 +194,7 @@ footer {
     }
 }
 
-.carousel {
+.carousels {
     display: none;
 }
 
