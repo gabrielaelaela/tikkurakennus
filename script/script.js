@@ -86,3 +86,9 @@ function showItems(carousel, item) {
         carousel.querySelector(".dot.active").classList.remove("active");
     carousel.querySelectorAll(".dot")[item].classList.add("active");
 }
+
+function displayCarousel(id) {
+    document.getElementById(id).style.display = "block";
+    document.getElementById("carousel-place").style.height = "100%";
+    document.body.style.overflow = "hidden";
+}
