@@ -15,9 +15,9 @@
 <body>
     <div id="header">
         <div id = "menu">
-            <div id = "active"><a href="index.html"><p>Main page</p></a></div>
-            <div><a><p>About</p></a></div>
-            <div><a><p>Contact</p></a></div>
+            <div><a href="index.html"><p id = "active">Etusivu</p></a></div>
+            <div><a><p>Tietoa</p></a></div>
+            <div><a><p>Yhteystiedot</p></a></div>
         </div>
 
         <img id = "logo" src = "images/icon_no_back.png">
@@ -28,7 +28,7 @@
         <h1>Asuin- ja muiden rakennusten rakentaminen</h1>
     </div>
 
-    <h1>Our works</h1>
+    <h1>Ty<inline style = "font-size: larger">ö</inline>maakuvia</h1>
 
     <h2>Perusty<inline style = "font-size: larger">ö</inline>t</h2>
 
@@ -90,11 +90,13 @@
                                 <div class="image"><img src="images/roofs/1/20210617_111410.jpg"/></div>
                             </div>
                             <a class="prev has-dflex-center">
-                                <i class="fas fa-angle-left"></i>
-                                <p></p>
+                                <b class="fas fa-angle-left">&#60</b>
                             </a>
                             <a class="next has-dflex-center">
-                                <i class="fas fa-angle-right"></i>
+                                <b class="fas fa-angle-right">&#62</b>
+                            </a>
+                            <a class="close" onclick="closeCarousel('carouselroof1')">
+                                <b class="cross">X</b>
                             </a>
                         </div>
                     </div>

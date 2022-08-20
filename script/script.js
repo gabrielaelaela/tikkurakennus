@@ -92,3 +92,9 @@ function displayCarousel(id) {
     document.getElementById("carousel-place").style.height = "100%";
     document.body.style.overflow = "hidden";
 }
+
+function closeCarousel(id) {
+    document.getElementById(id).style.display = "none";
+    document.getElementById("carousel-place").style.height = "0";
+    document.body.style.overflow = "scroll";
+}
