@@ -167,7 +167,14 @@ h3 {
 }
 
 footer {
-    background: gray;
+    background: rgba(125,117,119,0.9);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 #carousel-place {
@@ -330,6 +337,20 @@ footer {
     }
 }
 
+#about-text {
+    position: absolute;
+    width: 40vw;
+    left: 30vw;
+    top: 15vh;
+}
+
+#contact-text {
+    position: absolute;
+    width: 90vw;
+    left: 5vw;
+    top: 20vh;
+}
+
 @media screen and (max-width: 700px) {
     #header {
         padding-top: 3vh;
@@ -390,5 +411,10 @@ footer {
         position: absolute;
         padding-left: 0.1rem;
         top: calc(50% - 0.52rem);
+    }
+
+    #about-text {
+        width: 90vw;
+        left: 5vw;
     }
 }

@@ -91,10 +91,12 @@ function displayCarousel(id) {
     document.getElementById(id).style.display = "block";
     document.getElementById("carousel-place").style.height = "100%";
     document.body.style.overflow = "hidden";
+    document.getElementById("footer").style.display = "none";
 }
 
 function closeCarousel(id) {
     document.getElementById(id).style.display = "none";
     document.getElementById("carousel-place").style.height = "0";
     document.body.style.overflow = "scroll";
+    document.getElementById("footer").style.display = "flex";
 }

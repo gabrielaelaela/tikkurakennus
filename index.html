@@ -16,11 +16,11 @@
     <div id="header">
         <div id = "menu">
             <div><a href="index.html"><p id = "active">Etusivu</p></a></div>
-            <div><a><p>Tietoa</p></a></div>
-            <div><a><p>Yhteystiedot</p></a></div>
+            <div><a href="about.html"><p>Tietoa</p></a></div>
+            <div><a href="contact.html"><p>Yhteystiedot</p></a></div>
         </div>
 
-        <img id = "logo" src = "images/icon_no_back.png">
+        <a href="index.html"><img id = "logo" src = "images/icon_no_back.png"></a>
     </div>
 
     <div id="main_photo">
@@ -47,7 +47,7 @@
         </div>
 
         <div>
-            <img src="images/roofs/2/20210528_085828.jpg">
+            <img src="images/roofs/2/20210528_085828.jpg" onclick="displayCarousel('carouselroof2')">
             <p>Työmaalla osoite: Helsinki, Punahilkantie 8 </p>
             <p>Rakentaja: Asunto Oy</p>
             <p>Tehty: vesikaton korjaus</p>
@@ -55,7 +55,7 @@
         </div>
 
         <div>
-            <img src="images/roofs/3/20210721_131456.jpg">
+            <img src="images/roofs/3/20210721_131456.jpg" onclick="displayCarousel('carouselroof3')">
             <p>Työmaalla osoite: Vantaa</p>
             <p>Rakentaja: Apselon Oy</p>
             <p>Tehty: vesikaton korjaus, lumieste asennus</p>
@@ -63,7 +63,7 @@
         </div>
 
         <div>
-            <img src="images/roofs/4/20211203_131651.jpg">
+            <img src="images/roofs/4/20211203_131651.jpg" onclick="displayCarousel('carouselroof4')">
             <p>Työmaalla osoite: Helsinki, Tuulimyllyntie 3</p>
             <p>Rakentaja: Solvekin Kattohuolto Oy</p>
             <p>Tehty: vesikaton korjaus</p>
@@ -104,13 +104,103 @@
             </section>
         </div>
 
-        <main>
+        <div class="carousels" id="carouselroof2">
+            <section class="has-dflex-center">
+                <div class="lx-container-80">
+                    <div class="lx-row">
+                        <div class="lx-card carousel-container">
+                            <div class="item fade">
+                                <div class="image"><img src="images/roofs/2/20210528_085828.jpg"/></div>
+                            </div>
+                            <div class="item fade">
+                                <div class="image"><img src="images/roofs/2/20210601_074234.jpg"/></div>
+                            </div>
+                            <a class="prev has-dflex-center">
+                                <b class="fas fa-angle-left">&#60</b>
+                            </a>
+                            <a class="next has-dflex-center">
+                                <b class="fas fa-angle-right">&#62</b>
+                            </a>
+                            <a class="close" onclick="closeCarousel('carouselroof1')">
+                                <b class="cross">X</b>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
 
-        </main>
+        <div class="carousels" id="carouselroof3">
+            <section class="has-dflex-center">
+                <div class="lx-container-80">
+                    <div class="lx-row">
+                        <div class="lx-card carousel-container">
+                            <div class="item fade">
+                                <div class="image"><img src="images/roofs/3/20210721_131456.jpg"/></div>
+                            </div>
+                            <div class="item fade">
+                                <div class="image"><img src="images/roofs/3/20210721_102425.jpg"/></div>
+                            </div>
+                            <div class="item fade">
+                                <div class="image"><img src="images/roofs/3/20210721_103039.jpg"/></div>
+                            </div>
+                            <a class="prev has-dflex-center">
+                                <b class="fas fa-angle-left">&#60</b>
+                            </a>
+                            <a class="next has-dflex-center">
+                                <b class="fas fa-angle-right">&#62</b>
+                            </a>
+                            <a class="close" onclick="closeCarousel('carouselroof1')">
+                                <b class="cross">X</b>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="carousels" id="carouselroof4">
+            <section class="has-dflex-center">
+                <div class="lx-container-80">
+                    <div class="lx-row">
+                        <div class="lx-card carousel-container">
+                            <div class="item fade">
+                                <div class="image"><img src="images/roofs/4/20211203_131651.jpg"/></div>
+                            </div>
+                            <div class="item fade">
+                                <div class="image"><img src="images/roofs/4/20211210_093651.jpg"/></div>
+                            </div>
+                            <a class="prev has-dflex-center">
+                                <b class="fas fa-angle-left">&#60</b>
+                            </a>
+                            <a class="next has-dflex-center">
+                                <b class="fas fa-angle-right">&#62</b>
+                            </a>
+                            <a class="close" onclick="closeCarousel('carouselroof1')">
+                                <b class="cross">X</b>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </div>
 
-    <footer>
-        <p>Tikku Rakennus Oy</p>
+
+    <div style="height: 100px;"></div>
+    <footer id="footer">
+        <div>
+            <p>Tikku Rakennus Oy</p>
+            <p>Y-tunnus 32732 38-8</p>
+            <p>0135 0 Vantaa</p>
+            <p>www.tikkurakennus.fi</p>
+        </div>
+        <div>
+            <p>Ty<inline style = "font-size: larger">ö</inline>njotaja</p>
+            <p>Radu Ticu</p>
+            <p>+358 45 251 1010</p>
+            <p>radu@tikkurakennus.fi</p>
+        </div>
     </footer>
 
     <script src="script/script.js"></script>
