@@ -357,6 +357,7 @@ footer:hover {
     position: relative;
     width: 40vw;
     left: 30vw;
+    margin-bottom: 40px;
 }
 
 #contact-text {
