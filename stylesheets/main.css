@@ -387,7 +387,8 @@ footer:hover {
 }
 
 #contact-text #logo {
-    height: 12vw;
+    width: 12vw;
+    height: auto;
 }
 
 #contact-text div {
