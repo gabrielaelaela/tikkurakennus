@@ -145,6 +145,7 @@ h3 {
 .album div {
     margin-bottom: 30px;
     width: 30vw;
+    margin-left: 2vw;
 }
 
 .album div p {
