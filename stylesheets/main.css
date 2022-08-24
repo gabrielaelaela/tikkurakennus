@@ -33,6 +33,10 @@ b {
     color: rgb(40,73,7);
 }
 
+inline {
+    opacity: 0.9;
+}
+
 a:hover {
     color: rgb(40,73,7);
 }
@@ -368,20 +372,32 @@ footer:hover {
     top: 10vh;
     padding-top: 20vh;
     width: 90vw;
+    align-items: stretch;
+}
+
+.contact-block{
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 #contact-text #portrait {
-    width: 12vw;
+    width: 10vw;
     height: auto;
+}
+
+#contact-text a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #contact-text #logo {
-    width: 12vw;
-    height: auto;
+    height: 12vw;
 }
 
 #contact-text div {
-    align-self: center;
     margin-left: 10px;
 }
 
