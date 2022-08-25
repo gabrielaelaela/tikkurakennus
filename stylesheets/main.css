@@ -490,9 +490,10 @@ footer:hover {
 
     #contact-text #portrait-block {
         margin-top: 10vh;
+        margin-left: 25px;
 
         display: flex;
-        justify-content: space-around;
+        justify-content: left;
         width: 100%;
         flex-direction: row;
 
