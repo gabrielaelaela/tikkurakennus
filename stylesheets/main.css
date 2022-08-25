@@ -492,9 +492,10 @@ footer:hover {
         margin-top: 10vh;
 
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         width: 100%;
         flex-direction: row;
+
     }
 
     #contact-text #portrait {
