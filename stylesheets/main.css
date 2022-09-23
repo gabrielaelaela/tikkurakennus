@@ -474,9 +474,18 @@ footer:hover {
         top: calc(50% - 0.52rem);
     }
 
+    #about-container {
+        flex-direction: column;
+    }
+
     #about-text {
-        width: 90vw;
-        left: 5vw;
+        max-width: 85vw;
+        padding-bottom: 10px;
+    }
+
+    #about-container img {
+        height: auto;
+        width: 85vw;
     }
 
     #about-wrapper {
@@ -512,5 +521,6 @@ footer:hover {
     #contact-text #portrait {
         width: 15vh;
     }
+
 
 }
